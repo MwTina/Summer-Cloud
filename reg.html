@@ -1,0 +1,38 @@
+<style type="text/css">  
+    html{font-size:12px;}  
+    fieldset{width:520px; margin: 0 auto;}  
+    legend{font-weight:bold; font-size:14px;}  
+    label{float:left; width:70px; margin-left:10px;}  
+    .left{margin-left:80px;}  
+    .input{width:150px;}  
+    span{color: #666666;}  
+</style> 
+
+
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>  
+<legend>用户注册</legend>  
+<form name="RegForm" method="post" action="reg.php" onSubmit="return InputCheck(this)">  
+<p>  
+<label for="username" class="label">用户名:</label>  
+<input id="username" name="username" type="text" class="input" />  
+<span>(支持中文、英文字母、数字,类似：-、_、.等合法字符集范围之外的字符不允许使用)</span>  
+<p/>  
+<p>  
+<label for="password" class="label">密 码:</label>  
+<input id="password" name="password" type="password" class="input" />  
+<span>(必填，36个字符之内)</span>  
+<p/>  
+  
+<p>  
+<input type="submit" name="submit" value="  提交注册  " class="left" />  
+</p>  
+</form>  
+</body> 
+</html>  
+
+
+ 
