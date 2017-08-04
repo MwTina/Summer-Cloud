@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html  lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Start</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/icomoon.css">
+		<link rel="stylesheet" href="css/themify-icons.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/modernizr-2.6.2.min.js"></script>
+
+		<script language=JavaScript>
+			function InputCheck(RegForm)
+			{
+			  if (RegForm.email.value != ""&&RegForm.repass.value != RegForm.password.value)
+			  {
+			    alert("两次密码不一致!");
+			    RegForm.repass.focus();
+			    return (false);
+			  }
+			}
+		</script>
+
+	</head>
+	<body>
+
+	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image: url(images/img_4.jpg)">
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 text-left">
+
+					<div class="row row-mt-15em">
+						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
+							<span class="intro-text-small">2017 summer</span>
+							<h1>Welcome to File Cloud</h1>
+						</div>
+
+						<div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+							<div class="form-wrap">
+
+								<div class="tab">
+									<ul class="tab-menu">
+										<li class="active gtco-first"><a href="#" data-tab="signup">Sign up</a></li>
+										<li class="gtco-second"><a href="#" data-tab="login">Login</a></li>
+									</ul>
+
+									<div class="tab-content">
+
+										<div class="tab-content-inner active" data-content="signup">
+											<form name="RegForm" method="post" action="reg.php" onSubmit="return InputCheck(this)">
+
+												<div class="row form-group">
+													<div class="col-md-20">
+														<label for="username">Username</label>
+														<input type="text" class="form-control" id="username" name="username" placeholder="支持汉字、字母、数字及合法字符集" required>
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-20">
+														<label for="password">Password</label>
+														<input type="password" class="form-control" id="password" name="password" placeholder="不少于6位，大小写字母和数字的组合" required>
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-20">
+														<label for="repass">Repeat Password</label>
+														<input type="password" class="form-control" id="repass" name="repass" placeholder="Password again" required>
+													</div>
+												</div>
+                        <div class="row form-group">
+                          <div class="col-md-20">
+                            <label for="mail">Email</label>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Email address" required>
+                          </div>
+                        </div>
+												<div class="row form-group">
+													<div class="col-md-20">
+														<button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign up</button>
+													</div>
+												</div>
+											</form>
+										</div>
+
+										<div class="tab-content-inner" data-content="login">
+											<form name="LoginForm" method="post" action=login.php onSubmit="return InputCheck(this)">
+												<div class="row form-group">
+													<div class="col-md-20">
+														<label for="username">Username</label>
+														<input type="text" class="form-control" id="username" name="username" required>
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-20">
+														<label for="password">Password</label>
+														<input type="password" class="form-control" id="password" name="password" required>
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-20">
+														<button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign in</button>
+													</div>
+												</div>
+											</form>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.countTo.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
